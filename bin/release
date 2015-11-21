@@ -3,7 +3,7 @@
 cat << EOF
 ---
 config_vars:
-  LD_LIBRARY_PATH: .
+  LD_LIBRARY_PATH: /app
 default_process_types:
   web: /app/simplepost $PORT 
 EOF
