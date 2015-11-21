@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat << EOF
+---
+default_process_types:
+  the_daemon: app-to-run
+EOF
