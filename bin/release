@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  the_daemon: app-to-run
+  the_daemon: app-to-run --path=. -q "Hello world"
 EOF
