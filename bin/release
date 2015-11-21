@@ -3,6 +3,6 @@
 cat << EOF
 ---
 default_process_types:
-  web: ./simplepost
+  web: LD_LIBRARY_PATH=. ./simplepost
   the_daemon: LD_LIBRARY_PATH=. ./app-to-run --path=. -q --ipa "Hello world"
 EOF
