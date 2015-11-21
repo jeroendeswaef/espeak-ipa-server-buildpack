@@ -2,7 +2,8 @@
 
 cat << EOF
 ---
+config_vars:
+  LD_LIBRARY_PATH: .
 default_process_types:
-  web: echo $PORT && LD_LIBRARY_PATH=. ./simplepost $PORT 
-  the_daemon: LD_LIBRARY_PATH=. ./app-to-run --path=. -q --ipa "Hello world"
+  web: simplepost $PORT 
 EOF
