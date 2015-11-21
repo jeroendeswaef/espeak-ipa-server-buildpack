@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  the_daemon: app-to-run --path=. -q "Hello world"
+  the_daemon: LD_LIBRARY_PATH=. ./app-to-run --path=. -q --ipa "Hello world"
 EOF
