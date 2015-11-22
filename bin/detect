@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# this pack is valid for apps with a hello.txt in the root
-if [ -f $1/app-to-run ]; then
+if [ -f $1/espeak-ipa-server ]; then
   echo "Daemon executable"
   exit 0
 else

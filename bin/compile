@@ -4,10 +4,10 @@ indent() {
   sed -u 's/^/       /'
 }
 
-echo "-----> Found an file app-to-run"
+echo "-----> Found an file espeak-ipa-server"
 
 # if hello.txt is empty, abort the build
-if [ ! -s $1/app-to-run ]; then
-  echo "app-to-run was empty" | indent
+if [ ! -s $1/espeak-ipa-server ]; then
+  echo "executable was empty" | indent
   exit 1
 fi
